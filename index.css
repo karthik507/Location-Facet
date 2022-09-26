@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* body tag design */
+
+#bd-el {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* input field design */
+
+#myInput {
+    background-image: url('search-icon.png');
+    background-size: 8% 50%;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+
+/* Unordered list design */
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: -56px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 300px;
+    width: 80%;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: rgb(213, 220, 226);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+
+/* Whole widget div design */
+
+#id1 {
+    width: 500px;
+    position: absolute;
+    margin-top: 220px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-right: 500px;
+    background-color: rgb(213, 220, 226);
+}
+
+#loc-el {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+#div1 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+
+/* before left arrow click Design */
+
+#leftarrow {
+    height: 45px;
+    width: 45px;
+    float: right;
+    margin: auto;
+    color: rgb(108, 171, 253);
+}
+
+#toggleBtn {
+    width: 40px;
+    height: 14px;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+
+/* after left arrow click Design */
+
+#aftertoggle {
+    width: 33px;
+    height: 40px;
+    color: rgb(108, 171, 253);
+}
+
+#a1 {
+    color: rgb(76, 145, 248);
+    border-radius: 2px;
+    width: auto;
+}
+
+
+/* Font aweson icon design */
+
+.glyphicon {
+    border-radius: 0px;
+    color: rgb(115, 115, 223);
+}
+
+
+/* Button Design */
+
+button {
+    background-color: white;
+    border-radius: 70px;
+    border-color: #ddd;
+    border-bottom: #ddd;
+    border-top: #ddd;
+    border-right: #ddd;
+    border-left: #ddd;
+}
+
+
+/* Input Field Design */
+
+input {
+    border-radius: 10px;
+}
+
+
+/* Clear Button Design */
+
+#clrBtn {
+    background-color: rgb(202, 216, 228);
+    color: rgb(107, 165, 252);
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+/* Check box design for each list of countries*/
+
+#bng1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#ukr1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#unkg1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#krw1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#mu1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#wa1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#npcc1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#npchi1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#npia1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#nppo1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+#npru1 {
+    border-radius: 0px;
+    width: 30px;
+    height: 18px;
+}
+
+.Hiddenbox {
+    width: 100%;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    left: 0px;
+    box-sizing: border-box;
+    /*   background-color: #d2d2d2;
+    */
+    top: 0px;
+}
+
+#Invisible {
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+
+#b1 {
+    color: black;
+    background-color: rgb(213, 220, 226);
+    ;
+}
+
+
+/* Hidden tag Conatiner design */
+
+.container {
+    overflow: hidden;
+    margin-left: 33px;
+    margin-left: 30px;
+}

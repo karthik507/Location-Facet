@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="eng">
+
+  <head>
+    <title>Blueoptima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b1f34ee172.js" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.4/css/flag-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <div id="id1">
+      <div align="left" id="loc-el">
+        <br>
+        <h2>
+            Locations
+            <img id="leftarrow" src="collapse.png"></img> 
+            <button class="karthik" id="toggleBtn" onclick="toggleClick()"></button>
+        </h2>
+        <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="   Filter locations" title="Type in a name">
+      </div>
+      
+        <div id="list" class="listHolder">
+          <h4>
+            <button id="clrBtn">
+              <strong onclick="clearAll(this)">✖ Clear All</strong>
+            </button>
+          </h4>
+          <div class="Hiddenbox" id="Invisible">
+            <div class="container">
+              <button id="b1"href="#A" onclick="searchA()">A</button>
+              <button id="b1"href="#B" onclick="searchB()">B</button>
+              <button id="b1"href="#C" onclick="searchC()">C</button>
+              <button id="b1"href="#D" onclick="searchD()">D</button>
+              <button id="b1"href="#E" onclick="searchE()">E</button>
+              <button id="b1"href="#F" onclick="searchF()">F</button>
+              <button id="b1"href="#G" onclick="searchG()">G</button>
+              <button id="b1"href="#H" onclick="searchH()">H</button>
+              <button id="b1"href="#K" onclick="searchK()">K</button>
+              <button id="b1"href="#M" onclick="searchM()">M</button>
+              <button id="b1"href="#N" onclick="searchN()">N</button>
+              <button id="b1"href="#w" onclick="searchW()">W</button>
+            </div>
+          </div>
+        <div>
+          <ul id="myUL">
+            <!-- span tag for flag icon followed by list of each countries -->
+            <li id="a-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="algeria"> <span class="fi fi-dz fis"></span> 	Algiers</a></li>
+            <li id="b-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="bangalore"> <span class="fi fi-in fis"></span> Bangalore</a></li>
+            <li id="c-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="Chile"> <span class="fi fi-cl fis"></span> Calama</a></li>
+            <li id="d-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="denmark"> <span class="fi fi-dk fis"></span> Dalby</a></li>
+            <li id="e-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="egypt"> <span class="fi fi-eg fis"></span> El-Minya</a></li>
+            <li id="f-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="finland"> <span class="fi fi-fi fis"></span> Finnby</a></li>
+            <li id="f-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="france"> <span class="fi fi-fr fis"></span> Fabas</a></li>
+            <li id="g-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="germany"> <span class="fi fi-ge fis"></span> Galle</a></li>
+            <li id="h-letter"><a href="javascript:void()"><input type="checkbox" id="bng1" name="b1" value="hongkong"> <span class="fi fi-hk fis"></span> Ha Tsuen</a></li>
+            <li id="k-letter"><a href="javascript:void()"><input type="checkbox" id="ukr1" name="uk1" value="uk"> <span class="fi fi-ua fis"></span> Kiev-Ukraine</a></li>
+            <li id="k-letter"><a href="javascript:void()"><input type="checkbox" id="unkg1" name="unk1" value="unk"> <span class="fi fi-gb fis"></span> Kiev-United Kingdom</a></li>
+            <li id="k-letter"><a href="javascript:void()"><input type="checkbox" id="krw1" name="kr1" value="krakow"> <span class="fi fi-pl fis"></span> Krakow</a></li>
+            <li id="m-letter"><a href="javascript:void()"><input type="checkbox" id="mu1" name="m1" value="mumbai"> <span class="fi fi-in fis"></span> Mumbai</a></li>
+            <li id="n-letter"><a href="javascript:void()"><input type="checkbox" id="npcc1" name="npc1" value="npc"> <span class="fi fi-ca fis"></span> Not Provided-Canada</a></li>
+            <li id="n-letter"><a href="javascript:void()"><input type="checkbox" id="npchi1" name="npch1" value="npch"> <span class="fi fi-cn  fis"></span> Not Provided-China</a></li>
+            <li id="n-letter"><a href="javascript:void()"><input type="checkbox" id="npia1" name="npi1" value="npi"> <span class="fi fi-in fis"></span> Not Provided-India</a></li>
+            <li id="n-letter"><a href="javascript:void()"><input type="checkbox" id="nppo1" name="npp1" value="npp"> <span class="fi fi-pl fis"></span> Not Provided-Poland</a></li>
+            <li id="n-letter"><a href="javascript:void()"><input type="checkbox" id="npru1" name="npr1" value="npr"> <span class="fi fi-ru fis"></span> Not Provided-Russia</a></li>
+            <li id="w-letter"><a href="javascript:void()"><input type="checkbox" id="wa1" name="w1" value="w"> <span class="fi fi-us fis"></span> Washington</a></li>
+          </ul>
+        </div>
+        </div>
+      <br>
+    </div>
+    <!-- Linking HTML file to the Javascript File index.js -->
+      <script src="index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
